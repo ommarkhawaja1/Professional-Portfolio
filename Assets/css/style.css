@@ -1,177 +1,201 @@
     *{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
     }
 
     body {
-    color: black;
-    font-family: Helvetica, Arial, sans-serif;
+        color: black;
+        font-family: Helvetica, Arial, sans-serif;
     }
 
     header {
-    padding: 20px 35px;
-    background-color: #4B9CD3;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+        padding: 20px 35px;
+        background-color: #4B9CD3;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
     }
   
     header h1 {
-    font-weight: bold;
-    margin: 0px;
-    font-size: 36px;
-    padding: 10px 15px;
-    color: black;
+        font-weight: bold;
+        margin: 0px;
+        font-size: 36px;
+        padding: 10px 15px;
+        color: black;
     }
   
     header a {
-    text-decoration: none;
-    color: black;
+        text-decoration: none;
+        color: black;
     }
   
     /*Navigation bar styling */
     header nav {
-    margin: 7px 0;
+        margin: 7px 0;
     }
   
     header nav ul {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-    list-style: none;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+        list-style: none;
     }
   
     header nav ul li a {
-    padding: 10px 25px;
-    font-weight: lighter;
-    font-size: 1.55vw;
+        padding: 10px 25px;
+        font-weight: lighter;
+        font-size: 1.55vw;
     }
 
     header nav ul li a:hover {
-    background: black;
-    color: white;
-    border-radius: 15px;
-    text-shadow: none;
+        background: black;
+        color: white;
+        border-radius: 15px;
+        text-shadow: none;
+    }
+
+    h2 {
+        font-size: 24px;
     }
 
     .About-Me {
-      text-align: center;
-      padding-left: 50px;
-      padding-right: 50px;
-      padding-top: 15px;
+        text-align: center;
+        padding-left: 50px;
+        padding-right: 50px;
+        padding-top: 15px;
     }
 
     /* image styling */
     
     .my-images {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    flex-direction: row;
-    height: 50vh;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        flex-direction: row;
+        padding: 25px
+    }
+      
+    .image {
+        box-shadow: 0 2px 20px;
+        margin: 5px;
+        max-width: 400px;
+        width: 100%;
+        height: auto;
+    }
+
+    .Projects {
+        text-align: center;
+        padding-top: 20px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .image1{
+        box-shadow: 0 2px 20px;
+        margin: 0px;
+        max-width: 900px;
+        width: 100%;
+        height: auto;
+    }
+
+    .image1:hover {
+        opacity:0.8;
+        filter:alpha(opacity=100); 
     }
     
-    .box {
-    padding: 20px 20px;
-    }
-
-    .box img {
-    box-shadow: 0 2px 20px;
-    height: 400px
-    }
-
     footer {
-    padding: 20px 35px;
-    background-color: #4B9CD3;
-    display: flex;
-    justify-content: space-between;
-}
-
-
+        padding: 10px 25px;
+        background-color: #4B9CD3;
+        display: flex;
+        justify-content: space-between;
+        position: fixed;
+        width: 100%;
+        left: 0;
+        bottom: 0;
+        position: sticky;
+        }
+    
     /* MEDIA QUERY FOR TABLETS AND SMALLER */
     @media screen and (max-width: 980px) {
     header {
-      padding-bottom: 0;
-      justify-content: center;
-      position: relative;
+        padding-bottom: 0;
+        justify-content: center;
+        position: relative;
     }
     
     header h1 {
-      width: 100%;
-      text-align: center;
-      font-size: 24px;
+        width: 100%;
+        text-align: center;
+        font-size: 24px;
     }
 
     header h1 {
-      margin-top: 24x;
-      width: 100%;
-      justify-content: center;
+        margin-top: 24x;
+        width: 100%;
+        justify-content: center;
     }
   
     header nav ul li a {
-      font-size: 18px;
-    }
-  
-    .my-images {
-    flex: row;
-    place-items: center;
-    justify-content: center;
-    height: 20vh;
+        font-size: 18px;
     }
 
     footer h3, footer div {
         text-align: center;
-        width: 100%
+        width: 100%;
+    }
+
+    footer {
+        padding: 0px;
     }
     }
 
     @media screen and (max-width: 768px) 
     {
     section {
-      padding: 30px 15px;
+        padding: 30px 15px;
     }
     
     .my-images {
-    flex: 0 32%;
-    flex-direction: row;
-    margin-right: 10;
-    margin-top: 15px;
-    margin-bottom: 15px;        
+        flex: 0 32%;
+        flex-direction: row;
+        margin-right: 10;
+        margin-top: 15px;
+        margin-bottom: 15px;        
     }
     }
   
     /* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
     @media screen and (max-width: 575px) {
     header {
-    padding-bottom: 0;
-    justify-content: center;
-    position: relative;
+        padding-bottom: 0;
+        justify-content: center;
+        position: relative;
     }
       
     header h1 {
-    width: 100%;
-    text-align: center;
-    font-size: 24px;
+        width: 100%;
+        text-align: center;
+        font-size: 24px;
     }
 
     header h1 {
-    margin-top: 24x;
-    width: 100%;
-    justify-content: center;
+        margin-top: 24x;
+        width: 100%;
+        justify-content: center;
     }
     
     header nav ul li a {
-    font-size: 18px;
+        font-size: 18px;
     }
     
     footer h3, footer div {
-    text-align: center;
-    width: 100%
+        text-align: center;
+        width: 100%
     }
     
     .box {
-    flex: 0 20%
+        flex: 0 20%
     }
 }

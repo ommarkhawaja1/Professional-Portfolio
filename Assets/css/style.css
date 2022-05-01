@@ -106,16 +106,24 @@
     }
     
     footer {
-        padding: 10px 25px;
         background-color: #4B9CD3;
-        display: flex;
-        justify-content: space-between;
-        position: fixed;
+        padding: 10px 25px;
+        position: relative;
+        margin-top: -90px;
+        height: 90px;
+        clear: both;
+        margin: 0px;
         width: 100%;
-        left: 0;
-        bottom: 0;
-        position: sticky;
-        }
+    }
+
+    .Contact-Me {
+        text-align: center;
+        padding-bottom: 0px;
+    }
+
+    address {
+        text-align: center;
+    }
     
     /* MEDIA QUERY FOR TABLETS AND SMALLER */
     @media screen and (max-width: 980px) {
@@ -195,7 +203,4 @@
         width: 100%
     }
     
-    .box {
-        flex: 0 20%
-    }
 }

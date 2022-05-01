@@ -18,8 +18,9 @@
   
   header h1 {
     font-weight: bold;
-    margin: 0;
+    margin: 0px;
     font-size: 36px;
+    padding: 10px 15px;
     color: black;
   }
   
@@ -47,14 +48,128 @@
     font-size: 1.55vw;
   }
 
+header nav ul li a:hover {
+    background: black;
+    color: white;
+    border-radius: 15px;
+    text-shadow: none;
+  }
+
+  .About-Me {
+      text-align: center;
+      padding-left: 50px;
+      padding-right: 50px;
+  }
+
 /* image styling */
-.my-images {
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: row;
-        align-items: center;
+.wrapper {
+    display: flex;
+    place-items: center;
+    justify-content: center;
+    height: 50vh;
+      }
+
+    .my-images {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    }
+    
+.box {
+    padding: 20px 20px;
+}
+.box img {
+    box-shadow: 0 2px 20px;
+    height: 400px
+}
+
+footer {
+    padding: 20px 35px;
+    background-color: #4B9CD3;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* MEDIA QUERY FOR TABLETS AND SMALLER */
+@media screen and (max-width: 980px) {
+    header {
+      padding-bottom: 0;
+      justify-content: center;
+      position: relative;
+    }
+    
+    header h1 {
+      width: 100%;
+      text-align: center;
+      font-size: 24px;
+  }
+    header h1 {
+      margin-top: 24x;
+      width: 100%;
+      justify-content: center;
+    }
+  
+    header nav ul li a {
+      font-size: 18px;
+    }
+  
+    footer h3, footer div {
+      text-align: center;
+      width: 100%
+    }
+  
+    .box {
+          flex: 0 20%
+          }
+    }
+  
+
+
+@media screen and (max-width: 768px) 
+    {
+    section {
+      padding: 30px 15px;
+    }
+    
+    .my-images {
+      flex: 0 32%;
+      flex-direction: row;
+      margin-right: 10;
+      margin-top: 15px;
+      margin-bottom: 15px;        
+    }
+    }
+  
+  /* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
+  @media screen and (max-width: 575px) {
+    header {
+        padding-bottom: 0;
+        justify-content: center;
+        position: relative;
+      }
+      
+      header h1 {
+        width: 100%;
+        text-align: center;
+        font-size: 24px;
+    }
+      header h1 {
+        margin-top: 24x;
+        width: 100%;
         justify-content: center;
       }
-.ommar {
-    padding: 0 20px 20px;
-}
+    
+      header nav ul li a {
+        font-size: 18px;
+      }
+    
+      footer h3, footer div {
+        text-align: center;
+        width: 100%
+      }
+    
+      .box {
+            flex: 0 20%
+            }
+      }
